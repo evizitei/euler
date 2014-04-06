@@ -2,7 +2,7 @@ def is_prime?(number)
   (2..Math.sqrt(number).ceil).each do |factor|
     return false if number % factor == 0
   end
-  return true
+  true
 end
 
 def find_next_factor(target, denominator)
